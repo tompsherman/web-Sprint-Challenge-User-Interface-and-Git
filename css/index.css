@@ -68,9 +68,12 @@ p {
     line-height: 1.4;
 }
 header{
+    width:800px;
+    margin: 0 auto;
 }
 .logo{
     display:inline;
+    margin:5% 0;
 }
 
 .nav {
@@ -78,7 +81,7 @@ header{
     flex-direction: row;
     justify-content: space-between
     ;
-    justify-content: center;
+    align-items: flex-end;
 }
 
 .nav a{
@@ -86,12 +89,18 @@ text-decoration: none;
 width:20%;
 text-align: center;
 color:black;
-padding-top: 20px;
+margin: 5%;
 }
 
-#banner{
-    width:100%;
+.button{
+    text-align: center;
 }
+
+.banner{
+    display:flex;
+    align-content: stretch;
+}
+
 .container {
     width: 800px;
     margin: 0 auto;
