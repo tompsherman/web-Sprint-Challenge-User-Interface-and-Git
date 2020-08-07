@@ -2,7 +2,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+*{
+    box-sizing: border-box;
+    /*border: 1px solid gray;*/
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,7 +21,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -65,9 +67,47 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+header{
+    width:800px;
+    margin: 0 auto;
+}
+.logo{
+    display:inline;
+    margin:5% 0;
+}
+
+.nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between
+    ;
+    align-items: flex-end;
+}
+
+.nav a{
+text-decoration: none;
+width:20%;
+text-align: center;
+color:black;
+margin: 5%;
+}
+
+.button{
+    text-align: center;
+}
+
+.banner{
+    display:flex;
+    align-content: stretch;
+}
 
 .container {
     width: 800px;
+    margin: 0 auto;
+}
+
+.container-about-page{
+    width:800px;
     margin: 0 auto;
 }
 
@@ -79,10 +119,14 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.about-top-content{
+    margin:20px;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -111,6 +155,67 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+#teal{
+    background:teal;
+}
+#gold{
+    background:gold;
+}
+#cadetblue{
+    background:cadetblue;
+}
+#coral{
+    background:coral;
+}
+#crimson{
+    background:crimson;
+}
+#forestgreen{
+    background:forestgreen;
+}
+#darkorchid{
+    background:darkorchid;
+}
+#hotpink{
+    background:hotpink;
+}
+#indigo{
+    background:indigo;
+}
+#dodgerblue{
+    background:dodgerblue;
+}
+.about-middle {
+display:flex;
+flex-wrap: wrap;
+justify-content: space-between;
+border-top: 1px dashed black;
+}
+
+.about-middle .about-middle-content{
+    width: 48%;
+    border-bottom: 1px dashed black;
+    margin: 3% auto;
+    padding: 3% 0;
+}
+
+.about-middle .about-middle-content img{
+    max-width:100%;
+}
+.about-middle .about-middle-content h2{
+    margin-top:3%;
+}
+
+.about-middle .about-middle-content .about-button{
+    text-decoration: none;
+    width:30%;
+    text-align: center;
+    color:black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1%;
+    }
 
 .bottom-content {
     display: flex;
@@ -144,3 +249,4 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
