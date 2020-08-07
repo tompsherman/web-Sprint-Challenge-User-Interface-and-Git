@@ -4,7 +4,7 @@
 */
 *{
     box-sizing: border-box;
-    border: 1px solid gray;
+    /*border: 1px solid gray;*/
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -120,14 +120,13 @@ margin: 5%;
 }
 
 .about-top-content{
-    margin: 20px;
-    border-bottom: 1px dashed black;
+    margin:20px;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -187,6 +186,37 @@ margin: 5%;
 #dodgerblue{
     background:dodgerblue;
 }
+.about-middle {
+display:flex;
+flex-wrap: wrap;
+justify-content: space-between;
+border-top: 1px dashed black;
+}
+
+.about-middle .about-middle-content{
+    width: 48%;
+    border-bottom: 1px dashed black;
+    margin: 3% auto;
+    padding: 3% 0;
+}
+
+.about-middle .about-middle-content img{
+    max-width:100%;
+}
+.about-middle .about-middle-content h2{
+    margin-top:3%;
+}
+
+.about-middle .about-middle-content .about-button{
+    text-decoration: none;
+    width:30%;
+    text-align: center;
+    color:black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1%;
+    }
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
